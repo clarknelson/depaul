@@ -1,18 +1,10 @@
-# DePaul University - Computer Science
 
-A collection of files worked on in my final two classes at DePaul university. Files from my other classes were lost in the great hard drive crash of 2016.
 
-I uploaded these files for easy access, and to provide sample code in system languages for potential employers.
+# Assignment One
 
-## CSC 348: Introduction to Compiler Design
+**Purpose:** To go over Recursive descent parsers
 
-### Assignment One
-
-#### Purpose:
-
-To go over Recursive descent parsers
-
-#### Overview:
+## Overview:
 
 Finish my C++ program that implements a recursive-descent parser of a simple language on strings. The language can handle:
 
@@ -21,7 +13,7 @@ Finish my C++ program that implements a recursive-descent parser of a simple lan
 * String repetition: 3 * "Hello " = "Hello Hello Hello "
 * Parentheses: 3 * ("Hello " + "there ") = "Hello there Hello there Hello there ", not "Hello Hello Hello there "
 
-#### Instructions
+## Instructions
 
 Finish parseSentence() and parseExpression()
 
@@ -42,9 +34,7 @@ If you detect an error then simply throw a string that describes the problem. In
 * throw "Expected end parenthesis"
 * throw "Expected integer, string constant, or begin parenthesis" (2x)
 
-
-
-#### Sample Output:
+## Sample Output:
 
     [instructor@jphillipsCentOS6-5 Assign1]$ ./stringLanguage
     Expression to compute: "Hello"
