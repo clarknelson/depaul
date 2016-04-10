@@ -49,37 +49,47 @@ If you detect an error then simply throw a string that describes the problem. In
     [instructor@jphillipsCentOS6-5 Assign1]$ ./stringLanguage
     Expression to compute: "Hello"
     Hello
+
     [instructor@jphillipsCentOS6-5 Assign1]$ ./stringLanguage
     Expression to compute: (I just press Enter)
     Expected integer, string constant, or begin parenthesis
+
     [instructor@jphillipsCentOS6-5 Assign1]$ ./stringLanguage
     Expression to compute: "Hello " + "there"
     Hello there
+
     [instructor@jphillipsCentOS6-5 Assign1]$ ./stringLanguage
     Expression to compute: "Hello " +
     Expected integer, string constant, or begin parenthesis
+
     [instructor@jphillipsCentOS6-5 Assign1]$ ./stringLanguage
     Expression to compute: + "there"
     Expected integer, string constant, or begin parenthesis
+
     [instructor@jphillipsCentOS6-5 Assign1]$ ./stringLanguage
     Expression to compute: 3 * "Hello "
     Hello Hello Hello
+
     [instructor@jphillipsCentOS6-5 Assign1]$ ./stringLanguage
     Expression to compute: 3 *
     Expected integer, string constant, or begin parenthesis
+
     [instructor@jphillipsCentOS6-5 Assign1]$ ./stringLanguage
     Expression to compute: * "Hello "
     Expected integer, string constant, or begin parenthesis
+
     [instructor@jphillipsCentOS6-5 Assign1]$ ./stringLanguage
     Expression to compute: 3 * "Hello " + "there"
     Hello Hello Hello there
+
     [instructor@jphillipsCentOS6-5 Assign1]$ ./stringLanguage
     Expression to compute: ("Hello " + "there"
     Expected end parenthesis
+
     [instructor@jphillipsCentOS6-5 Assign1]$ ./stringLanguage
     Expression to compute: ("Hello " + "there")
     Hello there
+
     [instructor@jphillipsCentOS6-5 Assign1]$ ./stringLanguage
     Expression to compute: 3 * ("Hello " + "there ")
     Hello there Hello there Hello there
-    [instructor@jphillipsCentOS6-5 Assign1]$
