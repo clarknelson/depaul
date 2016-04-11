@@ -8,13 +8,12 @@
 
 **Email:** jphillips at cdm.depaul.edu
 
-## Book:
+**Book:** See [craftingACompiler.pdf](https://github.com/jailbot/depaul/tree/master/compilerDesign/textbook/craftingACompiler.pdf), or click the link to download a pdf version
 
-**Crafting a Compiler** Addison-Wesley, 2010, ISBN 978-0-13-606705-4.
+## Class objective:
 
-*Charles N. Fischer, Ron K. Cytron, Richard J. LeBlanc Jr.*
-
-See [craftingACompiler.pdf](https://github.com/jailbot/depaul/tree/master/compilerDesign/textbook/craftingACompiler.pdf), or click the link to download a pdf version
+1. To discuss tasks and parts of an interpreter or compiler
+2. To learn some of the tools available to parser writers
 
 ## Class work:
 
@@ -26,26 +25,18 @@ See [craftingACompiler.pdf](https://github.com/jailbot/depaul/tree/master/compil
 
 ### Homework policy:
 
-* Assignments are due on Friday.
-* Homework turned in one day late is five points off
-* Homework turned in two days late is fifteen points off
+* Assignments are due on *Friday*.
+* Homework turned in **one** day late is *five points off*
+* Homework turned in **two** days late is *fifteen points off*
 
 ### Grading policy:
 
-* Assignments (*lowest grade dropped*) : 55%
-* Midterm : 0%
-* Final : 35%
-* Class participation : 10%
-
-
-## Class objective:
-
-1. To discuss tasks and parts of an interpreter or compiler
-2. To learn some of the tools available to parser writers
+* Assignments (*lowest grade dropped*) : **55%**
+* Midterm : **0%**
+* Final : **35%**
+* Class participation : **10%**
 
 ## Class structure:
-
-(per week)
 
 1. Chapter 1: Introduction, Chapter 2: A Simple Compiler
 2. Chapter 3: Scanning -- Theory and Practice
