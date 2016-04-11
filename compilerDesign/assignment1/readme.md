@@ -30,16 +30,16 @@ The grammar rules that parseExpression() should implement are:
 
 If you detect an error then simply throw a string that describes the problem. In my code I had the following:
 
-* throw "Expected * after integer"
-* throw "Expected end parenthesis"
-* throw "Expected integer, string constant, or begin parenthesis" (2x)
+* `throw "Expected * after integer"`
+* `throw "Expected end parenthesis"`
+* `throw "Expected integer, string constant, or begin parenthesis"`
 
 ## Hints
 
 Look at S: it has two productions
 
-* S -> E
-* S -> E '+' S
+* `S -> E`
+* `S -> E '+' S`
 
 both of which begin with E. Therefore, the very first thing parseSentence() ought to do is parseExpression() (of course it should keep whatever parseExpression() returns in a Node* variable.)
 

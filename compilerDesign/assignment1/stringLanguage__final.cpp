@@ -506,7 +506,7 @@ Node* parseExpression (TokenStream& tokenizer) throw(const char*) {
     }
   }
 
-  throw "Expected integer, string constant, or begin parenthesis";
+  return NULL;
 }
 
 
