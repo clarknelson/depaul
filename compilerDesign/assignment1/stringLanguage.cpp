@@ -13,6 +13,7 @@
  *----                                                                  ----*
  *----      Version 1.0    2016 April 2     Joseph Phillips             ----*
  *----      Version 1.1    2016 April 10    Clark Nelson                ----*
+ *----      - new whitespace formating                                  ----*
  *----                                                                  ----*
  *--------------------------------------------------------------------------*/
 
@@ -264,11 +265,13 @@ public :
   //  IV.  Constructor(s), assignment op(s), factory(s) and destructor:
   //  PURPOSE:  To initialize '*this' to hold symbol 'newSymbol'.  No return
   //  value.
-  Symbol (symbol_t newSymbol) : symbol_(newSymbol), stringPtr_(NULL), integer_(0) { }
+  Symbol (symbol_t newSymbol)
+  : symbol_(newSymbol), stringPtr_(NULL), integer_(0) { }
 
   //  PURPOSE:  To initialize '*this' to hold string 'newString'.  No return
   //  value.
-  Symbol (const std::string& newString) : symbol_(STRING_CONST_SYM), stringPtr_(new std::string(newString)), integer_(0) { }
+  Symbol (const std::string& newString)
+  : symbol_(STRING_CONST_SYM), stringPtr_(new std::string(newString)), integer_(0) { }
 
   //  PURPOSE:  To initialize '*this' to hold integer 'newInteger'.  No return
   //  value.
@@ -448,6 +451,8 @@ Node* parseSentence (TokenStream&  tokenizer) throw(const char*) {
 
   //  II.  Attempt to parse sentence:
   //  YOUR CODE HERE
+  Node* test = parseExpression(tokenizer);
+  return test;
 }
 
 
@@ -486,7 +491,7 @@ int main (int argc, char* argv[]) {
 
   try {
     TokenStream tokenizer(charStream);
-    Node* nodePtr  = parseSentence(tokenizer);
+    Node* nodePtr = parseSentence(tokenizer);
 
     std::cout << nodePtr->getValue() << std::endl;
     delete(nodePtr);
