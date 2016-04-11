@@ -406,8 +406,9 @@ protected :
 public :
   //  PURPOSE:  To initialize '*this' to tokenize given characters read from
   //    'newInputCharStream'.  No parameters.
-  TokenStream (InputCharStream&  newInputCharStream ) throw(const char*) : inputCharStream_(newInputCharStream), lastParsedPtr_(NULL) {
-    advance();
+  TokenStream (InputCharStream&  newInputCharStream ) throw(const char*)
+    : inputCharStream_(newInputCharStream), lastParsedPtr_(NULL) {
+      advance();
   }
 
   //  PURPOSE:  To release the resources of '*this'.  No parameters.  No return
@@ -434,46 +435,78 @@ public :
 };
 
 
+
+/*    START STUDENT WRITTEN CONTENT    */
+
+// PURPOSE: To print the next token in tokenizer.peek() to stdout
+void checkTokenizerPeek(TokenStream&  tokenizer) {
+  switch(tokenizer.peek()){
+    case END_OF_INPUT_SYM :
+      std::cout << "End of input \n";
+      break;
+    case STRING_CONST_SYM :
+      std::cout << "String constant \n";
+      break;
+    case INTEGER_CONST_SYM :
+      std::cout << "Integer constant \n";
+      break;
+    case BEGIN_PAREN_SYM :
+      std::cout << "Begin parenthesis \n";
+      break;
+    case END_PAREN_SYM :
+      std::cout << "End parenthesis \n";
+      break;
+    case CONCAT_SYM :
+      std::cout << "Concat (+) \n";
+      break;
+    case REPEAT_SYM :
+      std::cout << "Repeat (*) \n";
+      break;
+    default:
+      std::cout << "Unrecognized symbol in peek";
+      break;
+  }
+}
+
+
 //  PURPOSE:  To return a pointer to a heap-allocated Node instance
 //  representing an expression (non-terminal 'E') in String language.
 Node* parseExpression (TokenStream&  tokenizer) throw(const char*) {
-  //  I.  Application validity check:
-
-  //  II.  Attempt to parse expression:
   //  YOUR CODE HERE
+  checkTokenizerPeek(tokenizer);
+
+  return NULL;
 }
 
 
 //  PURPOSE:  To return a pointer to a heap-allocated Node instance
 //  representing a sentence (non-terminal 'S') in String language.
 Node* parseSentence (TokenStream&  tokenizer) throw(const char*) {
-  //  I.  Application validity check:
 
-  //  II.  Attempt to parse sentence:
-  //  YOUR CODE HERE
   Node* test = parseExpression(tokenizer);
+
+  if(tokenizer.peek() == CONCAT_SYM){
+    test = parseSentence(tokenizer);
+  }
+
   return test;
 }
 
+
+
+/*    END STUDENT WRITTEN CONTENT    */
 
 //  PURPOSE:  To return a string with the expression to compute, either from
 //  the command line or the keyboard.  'argc' tells how many arguments
 //  were on the command line and 'argv[]' points to those arguments.
 std::string getInput (int argc, char* argv[]) {
-  //  I.  Application validity check:
-
-  //  II.  Get input:
-  //  II.A.  Handle command line input:
   if (argc > 1)
     return(std::string(argv[1]));
 
-  //  II.B.  Handle keyboard input:
-  std::string  input;
-
+  std::string input;
   std::cout << "Expression to compute: ";
   std::getline(std::cin,input);
 
-  //  III.  Finished:
   return(input);
 }
 
@@ -484,7 +517,6 @@ std::string getInput (int argc, char* argv[]) {
 //  those arguments.  Returns 'EXIT_SUCCESS' if the expression was
 //  successfully parsed and computed or 'EXIT_FAILURE' otherwise.
 int main (int argc, char* argv[]) {
-
   std::string input(getInput(argc,argv));
   InputCharStream charStream(input);
   int status = EXIT_SUCCESS;
@@ -492,7 +524,6 @@ int main (int argc, char* argv[]) {
   try {
     TokenStream tokenizer(charStream);
     Node* nodePtr = parseSentence(tokenizer);
-
     std::cout << nodePtr->getValue() << std::endl;
     delete(nodePtr);
 
