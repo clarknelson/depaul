@@ -8,7 +8,7 @@
 
 **Email:** jphillips at cdm.depaul.edu
 
-**Book:** See [craftingACompiler.pdf](https://github.com/jailbot/depaul/tree/master/compilerDesign/textbook/craftingACompiler.pdf), or click the link to download a pdf version
+**Book:** See [textbook/craftingACompiler.pdf](https://github.com/jailbot/depaul/tree/master/compilerDesign/textbook/craftingACompiler.pdf)
 
 ## Class objective:
 
@@ -17,7 +17,7 @@
 
 ## Class work:
 
-1. *Please* do **in-class** activities in small groups.
+1. Please do in-class activities in small groups.
 2. Approximately *bi-weekly* assignments.
 3. Please do homework by yourself, individually! ***No cheating!***
 4. Tests **can not** be made up.
