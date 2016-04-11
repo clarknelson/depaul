@@ -469,6 +469,12 @@ Node* parseSentence (TokenStream& tokenizer) throw(const char*);
 // containing a legal expression in the string languag
 Node* parseExpression (TokenStream& tokenizer) throw(const char*) {
 
+  // likely nothing was passed to the program
+  // return the error message expecting input
+  if(tokenizer.peek() == END_OF_INPUT_SYM) {
+    throw "Expected integer, string constant, or begin parenthesis";
+  }
+
   if(tokenizer.peek() == STRING_CONST_SYM) {
     // since a solo string is considered an expression, we dont do much
     // a variable stores the value of the current (string) token
@@ -506,13 +512,15 @@ Node* parseExpression (TokenStream& tokenizer) throw(const char*) {
     }
   }
 
-  return NULL;
+  throw "Expected integer, string constant, or begin parenthesis";
 }
 
 
 //  PURPOSE:  To return a pointer to a heap-allocated Node instance
 //  representing a sentence (non-terminal 'S') in String language.
 Node* parseSentence (TokenStream& tokenizer) throw(const char*) {
+
+
 
   // each sentence contains at least one expression
   Node* leftHandSide = parseExpression(tokenizer);
