@@ -630,6 +630,8 @@ Node*    parseSentence  (TokenStream&  tokenizer
         throw(const char*);
 
 
+
+
 //  PURPOSE:  To return a pointer to a heap-allocated Node instance
 //  representing an expression (non-terminal 'E') in String language.
 Node*    parseExpression  (TokenStream&  tokenizer
@@ -643,16 +645,15 @@ Node*    parseExpression  (TokenStream&  tokenizer
 }
 
 
-//  PURPOSE:  To return a pointer to a heap-allocated Node instance
-//  representing a sentence (non-terminal 'S') in String language.
-Node*    parseSentence  (TokenStream&  tokenizer
-        )
-        throw(const char*)
-{
-  //  I.  Application validity check:
 
-  //  II.  Attempt to parse sentence:
-  //  YOUR CODE HERE
+
+//  PURPOSE: 
+Node* parseSentence (TokenStream& tokenizer) throw(const char*) {
+
+
+
+
+
 }
 
 
@@ -681,18 +682,22 @@ std::string  getInput  (int    argc,
 }
 
 
+Object name = new Object( "this is the name" );
+
+
+
 //  PURPOSE:  To get, and attempt to compute, the expression.  The expression
 //  may either come from the command line or the keyboard.  'argc' tells
 //  how many arguments were on the command line and 'argv[]' points to
 //  those arguments.  Returns 'EXIT_SUCCESS' if the expression was
 //  successfully parsed and computed or 'EXIT_FAILURE' otherwise.
-int    main    (int    argc,
-         char*    argv[]
-        )
-{
-  std::string    input(getInput(argc,argv));
-  InputCharStream  charStream(input);
-  int      status  = EXIT_SUCCESS;
+int main (int argc, char* argv[]) {
+
+
+  std::string input(getInput(argc,argv));
+
+  InputCharStream charStream(input);
+  int status = EXIT_SUCCESS;
 
   try
   {

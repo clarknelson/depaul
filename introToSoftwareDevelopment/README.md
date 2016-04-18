@@ -10,7 +10,7 @@
 
 ## Course Description
 
-This course introduces students to requirements elicitation, analysis, and design activites of a use-case driven and architecture-centric software development process. The course discusses in detail the basic concepts, and methodology to capture requirements and hot wo map these requirements into design elements. 
+This course introduces students to requirements elicitation, analysis, and design activites of a use-case driven and architecture-centric software development process. The course discusses in detail the basic concepts, and methodology to capture requirements and how to map these requirements into design elements. 
 
 Topics will include software development processes, Iterative and Agile processes, Unified Process, UML, requirements elicitation and specification, developing conceptual models of the problem domain of a software product, building design models, and using the obect-oriented methodology for building modular, reusable, and extensible software artifacts. 
 
@@ -19,10 +19,9 @@ Topics will include software development processes, Iterative and Agile processe
 1. Assignments - 60%
 2. Midterm - 40%
 
-
 ## Topics
 
-### Software Engineering Overview
+#### Software Engineering Overview
 
 * Engineering Software Products
 * Software Development Life Cycle
@@ -30,41 +29,41 @@ Topics will include software development processes, Iterative and Agile processe
 * Structural and Behavioral properties of Software Products
 * Overview of System Analysis & Design
 
-### Software Development Processes
+#### Software Development Processes
 
 * Waterfall Process vs Spiral Process
 * Iterative, Evolutionary, and Agile processes
 
-### Unified Process
+#### Unified Process
 
 * Object-Oriented Methodology
 * UP Phases
 * UP Disciplines
 * Refinements
 
-### UML for building software artifacts
+#### UML for building software artifacts
 
-### Requirements Elicitation
+#### Requirements Elicitation
 
 * Gathering Requirements
 * Categories of Requirements
 * Glossary and Supplementary Specifications
 * Requirements Organization in UP artifacts
 
-### Use-case modeling for Requirements
+#### Use-case modeling for Requirements
 
 * Use-Case Diagrams: Use Cases, Scenarios and Actors
 * Use-Case Formats: Brief, Casual, and Fully Dressed
 * Systems Sequence Diagrams and Operation Contracts
 
-### Analysis
+#### Analysis
 
 * Structured Analysis and Object-Oriented Analysis
 * Domain modeling
 * Finding Conceptual Classes
 * Sketching Class Diagrams
 
-### Design
+#### Design
 
 * Modular, reusable, and extensible software
 * Design Modeling
@@ -74,7 +73,7 @@ Topics will include software development processes, Iterative and Agile processe
 * Sequence and Communication Diagrams
 * Sketching Class Diagrams
 
-### Elements for Reuse
+#### Elements for Reuse
 
 * Code Reuse vs Design Reuse
 * Architectural Patterns

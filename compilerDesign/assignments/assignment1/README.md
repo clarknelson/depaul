@@ -1,5 +1,3 @@
-
-
 # Assignment One
 
 **Purpose:** To go over Recursive descent parsers
