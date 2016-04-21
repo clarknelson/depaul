@@ -44,11 +44,19 @@ Each potential interaction between an actor and a system is called a Use-Case. T
 3. Finding equipment price
 4. Checking out
 5. Delivering equipment to user
+<<<<<<< HEAD
 
 ### All use-cases
 
 **Multi System**
 
+=======
+
+### All use-cases
+
+**Multi System**
+
+>>>>>>> f6c6d86daec7fecd3f89e349e503a931f7275382
 * Buying equipment from store
 * Selling equipment to store
 * Renting equipment per day
@@ -99,6 +107,7 @@ Each use-case is described in a brief paragraph. They are categorized roughly by
 ### Multi System
 
 **Buying equipment from store:** The customer walks into the store and talks to a salesman. The customer selects a piece of equipment that satisfies their needs, and take it to the cash register. The cashier takes the customers personal information (ID and payment), then asks the customer a few more questions. The customer is asked if they want to purchase a replacement plan, to have the equipment delivered, and if they want to become a PowerMember. If the customer requires a delivery, the delivery driver drops off the equipment. Passively, the customer information is added to the user system, the sale is recorded in the transaction system, and the equipment is removed from the inventory system.
+<<<<<<< HEAD
 
 **Selling equipment to store:** The customer brings their equipment to the store and talks to the salesman. The salesman checks for the equipment in the inventory system and the pricing system. If the equipment is desirable, the salesman can offer a price to the customer. If the customer agrees to sell, the equipment entered into the inventory system. The customer is payed in cash, check, or in-store credit. Passively, the equipment is entered into the inventory system, the purchase is recorded in the transaction system, and the customer information is stored in the user system.
 
@@ -139,6 +148,48 @@ Each use-case is described in a brief paragraph. They are categorized roughly by
 
 ### User System
 
+=======
+
+**Selling equipment to store:** The customer brings their equipment to the store and talks to the salesman. The salesman checks for the equipment in the inventory system and the pricing system. If the equipment is desirable, the salesman can offer a price to the customer. If the customer agrees to sell, the equipment entered into the inventory system. The customer is payed in cash, check, or in-store credit. Passively, the equipment is entered into the inventory system, the purchase is recorded in the transaction system, and the customer information is stored in the user system.
+
+**Renting equipment per day:** The customer finds a piece of equipment that suits their needs from the salesman. The customer wishes to rent the device for a short period of time. The number of days that the device has been rented out will need to be recorded to keep track of late fees. The customer's information will also need to be recorded in order to contact them at a later time. If the device needs to be delivered, the delivery driver will drop the equipment off at the appropriate location.
+
+**Renting equipment per season:** The customer decides on a piece of equipment to rent for a season, either summer or winter, according to the salesman. The customer information will need to be recorded in order to pick up and drop off equipment. If a drop off is required, the delivery driver is in charge of dropping off the equipment. If a pick up is required at the end of the season, then the delivery driver is in charge of picking up the equipment.
+
+**Renting equipment per year:** The customer decides with the salesman an appropriate piece of equipment for the winter and summer seasons. Information regarding the customers location, credit card, and desired equipment will need to be stored in the system. If delivery is required, a driver is responsive for picking up and dropping off the appropriate equipment.
+
+### Inventory System
+
+**Adding products:** When new equipment comes in from the manufacturer, or is sold to the store by a customer, it needs to be added to the inventory system. The manager is in charge of adding equipment to the inventory system. The manager is also responsible for maintaining the inventory between the storefront and the warehouse.
+
+**Finding equipment price:** The salesman, manager, and cashier all have the ability to search for equipment in the pricing system. This information might or might not already be stored in the inventory system. The inventory system will update the estimated retail value of a piece of equipment based on the pricing system every week. The final sale price might fluctuate based on store discounts, or negotiation between the customer and salesperson.
+
+**Updating product information:** If the information is incorrect for equipment in the inventory system, it must be updated by the manager.
+
+**Storing discounts/rebates:** When equipment is overstocked or out-of-season, the manager should have the ability to assign a discount to the item in the inventory management system.
+
+**Updating sold products:** If equipment is sold to a customer, it must be removed from the current inventory. This is automatically done when the cashier finalizes the sale of the equipment. The inventory system will remove one from the associated item.
+
+**Updating rented products:** If equipment is rented to a customer, the equipment is not available at the storefront. The inventory system will remove one from the current stockpile, but note that a piece of equipment is on rent.
+
+**Updating storage products:** If equipment is overstocked, it must be moved to the warehouse. Equipment is also moved to the warehouse if it is in the off season. The inventory system will recognize when there are no devices available at the store, but that there are devices available at the warehouse.
+
+**Removing discontinued products:** If equipment is no longer carried by the store, it must be removed from the database. Any excess equipment should be put on sale, or disposed of properly. Removing a product should only be allowed if there are none left in the inventory system. An automatic "clean" could be created that removes all items with zero count from the system.
+
+
+### Transaction System
+
+**Checking out:** After the customer has decided on a device to buy, the cashier is responsible for entering or modifying the information in the database. This includes creating a record in the user system and transaction system. The transaction system is responsible for computing the final price and sales tax of a transaction.
+
+**Validating credit card:** When a cashier enters a customer's credit card information into the transaction system, it should validate the credit card to ensure that the it is a valid credit card.
+
+**Adding a replacement plan:** If the customer wishes to purchase a replacement plan for their equipment, it will be recorded in the transaction system. The type of insurance and whether or not it has been redeemed will need to be stored for each purchase.
+
+**Updating a replacement plan:** If the replacement plan has been redeemed, the record will be updated in the transaction system. User error could also contribute to the replacement plan needing to being modified.
+
+### User System
+
+>>>>>>> f6c6d86daec7fecd3f89e349e503a931f7275382
 **Adding user information:** When the customer is checking out, they are required to have a valid ID and credit card. The ID is used to enter basic information. The credit card is used to bill the customer as collateral. An email and phone number is recommended to contact that customer and provide notifications. The customer's PowerMember status is also recorded in the user system. The cashier is responsible for collecting all user information.
 
 **Updating user information:** A customer's information is likely to change over time. The cashier and manager have the ability to update this information in the user system. A cashier's error could also require that a customer's information be modified.
@@ -166,6 +217,7 @@ Each use-case is described in a brief paragraph. They are categorized roughly by
 ---
 * Use-case Model/diagram
 
+<<<<<<< HEAD
 
 ## Fully-formed Use-case
 
@@ -220,4 +272,6 @@ Each fully formed case includes the following information. The assignment requir
 
 
 
+=======
+>>>>>>> f6c6d86daec7fecd3f89e349e503a931f7275382
 One Use-case diagram must be in fully-dressed format and follow template. (84)
