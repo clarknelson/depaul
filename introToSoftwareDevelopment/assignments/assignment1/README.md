@@ -166,4 +166,58 @@ Each use-case is described in a brief paragraph. They are categorized roughly by
 ---
 * Use-case Model/diagram
 
+
+## Fully-formed Use-case
+
+Each fully formed case includes the following information. The assignment requires that we select one use-case and elaborate on it.
+
+* Name - start with a verb
+* Scope - systems used
+* Level - high-level category
+* Primary Actors - people involved
+* Stakeholders - invested actors
+* Preconditions - conditions for case
+* Success Condition - true upon completion
+* Success Scenario - description of activity
+* Alternate Scenarios - failure conditions
+* Special Requirements - non-functional requirements
+* Technology - data formats, hardware
+* Frequency - repetitiveness of case
+
+
+**Use-Case Name:** Renting equipment per day
+**Scope:** Inventory System, Transaction System, User System, Delivery System
+**Level:** Business
+**Frequency:** Daily
+**Primary Actors:** Customer, Salesman, Cashier
+**Stakeholders:** Customer, Manager
+**Technology:** Cash Register Terminals, Inventory Management Terminals
+**Preconditions:**
+* Customer must be interesting in renting a piece of equipment.
+* Store must be open and stocked with equipment
+**Success Condition:** The customer is able to use the device for a short period of time.
+**Success Scenario:** The customer walks into OutdoorPowerEquipmentRetailer looking to rent a device for a few days. After browsing the selection on the floor, a salesman greets himself to the customer looking to facilitate a sale. The customer communicates his or her needs and the salesman recommends an appropriate piece of equipment. When a device is selected, the two walk to the cashier to check out. The cashier collects the customers information to store in the user system, including phone number. A final price is determined using the pricing system and inventory system. The customer provides payment and the sale is finalized. The customer decides to have the equipment delivered, since their car is not large enough. The customer plans to frequently rent equipment from the store, so they also decide to become a PowerMember. At the end of the rental period, the customer is contacted to collect the device.
+
+**Alternate Scenarios:**
+
+* The customer is unable to find a suitable device, and leaves the store.
+* The customer is not helped by a salesperson, and shops elsewhere.
+* The customer is unable to rent a device because they do not have identification.
+* The customer is unable to rent a device because their credit card is denied.
+* The customer finds a piece of equipment without a salesperson.
+* The customer decides to not have the equipment delivered.
+* The customer decides not to buy the membership.
+
+**Special Requirements:**
+
+* The customer must have an ID
+* The customer must be able to pay
+* The store must be open
+* The systems must be working
+
+
+
+
+
+
 One Use-case diagram must be in fully-dressed format and follow template. (84)
