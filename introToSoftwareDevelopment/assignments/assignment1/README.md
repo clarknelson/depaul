@@ -56,7 +56,6 @@ Each potential interaction between an actor and a system is called a Use-Case. T
 
 **Multi System**
 
->>>>>>> f6c6d86daec7fecd3f89e349e503a931f7275382
 * Buying equipment from store
 * Selling equipment to store
 * Renting equipment per day
@@ -189,7 +188,6 @@ Each use-case is described in a brief paragraph. They are categorized roughly by
 
 ### User System
 
->>>>>>> f6c6d86daec7fecd3f89e349e503a931f7275382
 **Adding user information:** When the customer is checking out, they are required to have a valid ID and credit card. The ID is used to enter basic information. The credit card is used to bill the customer as collateral. An email and phone number is recommended to contact that customer and provide notifications. The customer's PowerMember status is also recorded in the user system. The cashier is responsible for collecting all user information.
 
 **Updating user information:** A customer's information is likely to change over time. The cashier and manager have the ability to update this information in the user system. A cashier's error could also require that a customer's information be modified.
@@ -266,12 +264,3 @@ Each fully formed case includes the following information. The assignment requir
 * The customer must be able to pay
 * The store must be open
 * The systems must be working
-
-
-
-
-
-
-=======
->>>>>>> f6c6d86daec7fecd3f89e349e503a931f7275382
-One Use-case diagram must be in fully-dressed format and follow template. (84)
